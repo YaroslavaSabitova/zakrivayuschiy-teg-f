@@ -17,6 +17,9 @@
     'Optima',
     sans-serif
   );
+  background-image: var(--gradient-main);
+  background-size: cover;
+  background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-variation-settings: 'wght' var(--font-weight-min);
