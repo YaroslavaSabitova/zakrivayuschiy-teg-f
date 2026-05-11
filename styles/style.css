@@ -11,6 +11,13 @@
 */
 
 .page {
+  font-family: var(
+    --font-main,
+    'Franklin Gothic Medium',
+    'Optima',
+    sans-serif
+  );
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-variation-settings: 'wght' var(--font-weight-min);
 }
