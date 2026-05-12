@@ -7,6 +7,10 @@
   --font-weight-min: 410;
   --font-weight-max: 715;
 
+  --main-color: #000;
+  --light-color: #fff;
+  --accent-color: #ff0000;
+
   --gradient-main: repeating-linear-gradient(
       to right,
       #d3d3d3 0px,
@@ -22,4 +26,15 @@
       transparent 4px
     ),
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+
+  --content-container-width: clamp(
+    23.4375rem,
+    16.2852rem + 30.5164vw,
+    43.75rem
+  );
+  --padding-inline: clamp(1rem, -1.3438rem + 10vw, 7.65625rem);
+  --padding-block: clamp(7.625rem, 7.4489rem + 0.7512vw, 8.125rem);
+  --margin-block: clamp(6.25rem, 6.25rem + 0vw, 6.25rem);
+
+  --titile-size: clamp(3.0625rem, 1.9087rem + 4.9231vw, 4.0625rem);
 }

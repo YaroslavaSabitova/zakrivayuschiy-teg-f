@@ -24,3 +24,23 @@
   min-block-size: 100dvb;
   font-variation-settings: 'wght' var(--font-weight-min);
 }
+
+.container {
+  margin: 0 auto;
+  border: 2px solid var(--main-color);
+  inline-size: var(--content-container-width);
+}
+
+.header {
+  margin-block: var(--margin-block);
+  padding-inline: var(--padding-inline);
+  padding-block: var(--padding-block);
+  background-color: var(--light-color);
+}
+
+.title {
+  color: var(--main-color);
+  font-family: var(--font-accent);
+  font-size: var(--titile-size);
+  text-transform: uppercase;
+}
