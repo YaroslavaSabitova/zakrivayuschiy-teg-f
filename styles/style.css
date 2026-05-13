@@ -53,3 +53,7 @@
 .header__text {
   font-size: var(--header-text-size);
 }
+
+.card {
+  background-color: var(--light-color);
+}

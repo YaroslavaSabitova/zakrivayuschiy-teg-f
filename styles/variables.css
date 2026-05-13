@@ -38,4 +38,8 @@
 
   --title-size: clamp(3.0625rem, 1.9087rem + 4.9231vw, 4.0625rem);
   --header-text-size: clamp(0.875rem, 0.226rem + 2.7692vw, 1.4375rem);
+
+  --contour-color: var(--main-color);
+  --animation-fill-color: var(--accent-color);
+  --sparks-color: var(--accent-color);
 }
