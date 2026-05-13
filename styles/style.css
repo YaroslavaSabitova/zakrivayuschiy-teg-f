@@ -139,3 +139,8 @@
   padding-inline: 25px;
   padding-block-end: 25px;
 }
+
+.footer {
+  margin-block-start: 50px;
+  margin-inline-end: 100px;
+}
