@@ -7,6 +7,9 @@
   --font-weight-min: 410;
   --font-weight-max: 715;
 
+  --font-size-main: 18px;
+  --font-size-additional: 14px;
+
   --main-color: #000;
   --light-color: #fff;
   --accent-color: #ff0000;
