@@ -570,14 +570,33 @@
     </main>
 
     <footer class="footer">
-      <!-- <svg
-        width="39"
-        height="39"
-        viewBox="0 0 39 39"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <use href="./svg/floppy.svg#floppy"></use>
-      </svg> -->
+      <div class="footer__wrapper flex-center">
+        <button
+          type="button"
+          onclick="window['modal-window'].showModal()"
+          class="button modal-button modal-button_open"
+          aria-controls="modal-window">
+          <svg
+            class="modal-button__icon"
+            width="39"
+            height="39"
+            viewBox="0 0 39 39"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <use href="./svg/floppy.svg#floppy"></use>
+          </svg>
+          <span class="button__text">Сохранить на&nbsp;память</span>
+        </button>
+
+        <dialog id="modal-window" class="modal-window">
+          <button
+            type="button"
+            onclick="window['modal-window'].close()"
+            class="button modal-button modal-button_close">
+            <span class="button__text">Ok</span>
+          </button>
+        </dialog>
+      </div>
     </footer>
 
     <script src="./scripts/like.js"></script>

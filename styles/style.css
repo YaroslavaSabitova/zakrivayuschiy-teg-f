@@ -142,5 +142,46 @@
 
 .footer {
   margin-block-start: 50px;
-  margin-inline-end: 100px;
+  margin-block-end: 100px;
+}
+
+.modal-button {
+  border: 2px solid var(--main-color, #000);
+  background-color: var(--light-color, #fff);
+}
+
+.modal-button_open {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-inline: 20px;
+  padding-block: 17px;
+}
+
+.button__text {
+  color: var(--main-color, #000);
+  font-family: var(--font-accent, 'Impact', 'Geneva', sans-serif);
+  font-weight: 400;
+  font-size: var(--font-size-additional, 14px);
+  line-height: 90%;
+}
+
+.modal-button__icon {
+  flex-shrink: 0;
+}
+
+.modal-button_open .modal-button__icon {
+  width: 21px;
+  height: 21px;
+}
+
+@media (width <= 376px) {
+  .modal-button_open {
+    flex-direction: column;
+  }
+
+  .modal-button_open .modal-button__icon {
+    width: 28px;
+    height: 28px;
+  }
 }
