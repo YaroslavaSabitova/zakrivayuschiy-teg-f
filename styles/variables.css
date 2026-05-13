@@ -36,5 +36,6 @@
   --padding-block: clamp(7.625rem, 7.4489rem + 0.7512vw, 8.125rem);
   --margin-block: clamp(6.25rem, 6.25rem + 0vw, 6.25rem);
 
-  --titile-size: clamp(3.0625rem, 1.9087rem + 4.9231vw, 4.0625rem);
+  --title-size: clamp(3.0625rem, 1.9087rem + 4.9231vw, 4.0625rem);
+  --header-text-size: clamp(0.875rem, 0.226rem + 2.7692vw, 1.4375rem);
 }

@@ -38,9 +38,18 @@
   background-color: var(--light-color);
 }
 
-.title {
+.header__wrapper {
+  flex-direction: column;
+  gap: 20px;
   color: var(--main-color);
-  font-family: var(--font-accent);
-  font-size: var(--titile-size);
+  font-family: var(--font-accent, 'Impact', 'Geneva', sans-serif);
   text-transform: uppercase;
+}
+
+.title {
+  font-size: var(--title-size);
+}
+
+.header__text {
+  font-size: var(--header-text-size);
 }
