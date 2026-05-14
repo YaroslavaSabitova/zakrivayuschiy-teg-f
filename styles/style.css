@@ -206,10 +206,6 @@
 }
 
 .modal-window__text {
-  color: var(--main-color, #000);
-  font-family: var(--font-accent, 'Impact', 'Geneva', sans-serif);
-  font-weight: var(--font-weight-accent, 400);
-  font-size: var(--font-size-additional, 14px);
   line-height: 150%;
   text-transform: uppercase;
 }

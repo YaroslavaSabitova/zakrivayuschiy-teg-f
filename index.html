@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
+    <link rel="stylesheet" href="./styles/filters.css" />
   </head>
   <body class="page">
     <header class="header container">
@@ -39,9 +40,10 @@
               <img
                 src="./images/1.jpg"
                 alt="изображение девушки, вдаль идущей по дороге"
-                class="card__image" />
+                class="card__image card__image-filer_expectations"
+                loading="lazy" />
 
-              <p class="card__elem">Начало пути</p>
+              <p class="card__elem">О будущем</p>
             </div>
 
             <div class="card__text">
@@ -104,7 +106,8 @@
               <img
                 src="./images/2.jpg"
                 alt="изображение пишущего предмета слева на чистом листе в блокноте на деревянной поверхности"
-                class="card__image" />
+                class="card__image card__image-filer_start"
+                loading="lazy" />
 
               <p class="card__elem">Начинаем</p>
             </div>
@@ -172,7 +175,8 @@
               <img
                 src="./images/3.jpg"
                 alt="изображение дороги вдаль с молнией на горизонте на фоне облаков в закате"
-                class="card__image" />
+                class="card__image card__image-filer_success"
+                loading="lazy" />
 
               <p class="card__elem">Ура!</p>
             </div>
@@ -238,7 +242,8 @@
               <img
                 src="./images/4.jpg"
                 alt="изображение зелёного ростка растения, тянущегося вверх из земли"
-                class="card__image" />
+                class="card__image card__image-filer_junior"
+                loading="lazy" />
 
               <p class="card__elem">Рано расслабляться</p>
             </div>
@@ -309,7 +314,8 @@
               <img
                 src="./images/5.jpg"
                 alt="изображение нескольких зелёных ростков растений, тянущихся вверх из земли"
-                class="card__image" />
+                class="card__image card__image-filer_team"
+                loading="lazy" />
 
               <p class="card__elem">Продолжаем</p>
             </div>
@@ -375,7 +381,8 @@
               <img
                 src="./images/6.jpg"
                 alt="изображение элементов пазлов на белой поверхности, сложенные в форме лошади"
-                class="card__image" />
+                class="card__image card__image-filer_variations"
+                loading="lazy" />
 
               <p class="card__elem">Больше примеров</p>
             </div>
@@ -440,7 +447,8 @@
               <img
                 src="./images/7.jpg"
                 alt="изображение сочных, свежих и разноцветных овощей и фруктов"
-                class="card__image" />
+                class="card__image card__image-filer_relax"
+                loading="lazy" />
 
               <p class="card__elem">Воздух</p>
             </div>
@@ -508,7 +516,8 @@
               <img
                 src="./images/8.jpg"
                 alt="изображение лестницы вверх в небо со стопками книг по бокам и человеком, смотрящим вдаль"
-                class="card__image" />
+                class="card__image card__image-filer_repeat"
+                loading="lazy" />
 
               <p class="card__elem">Конца не&nbsp;будет</p>
             </div>
@@ -585,34 +594,35 @@
             xmlns="http://www.w3.org/2000/svg">
             <use href="./svg/floppy.svg#floppy"></use>
           </svg>
+
           <span class="button__text">Сохранить на&nbsp;память</span>
         </button>
-
-        <dialog id="modal-window" class="modal-window">
-          <div class="modal-window__content flex-center">
-            <svg
-              class="modal-button__icon"
-              width="39"
-              height="39"
-              viewBox="0 0 39 39"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <use href="./svg/floppy.svg#floppy"></use>
-            </svg>
-
-            <p class="modal-window__text button__text">
-              Вставьте дискету, чтобы продолжить
-            </p>
-          </div>
-
-          <button
-            type="button"
-            onclick="window['modal-window'].close()"
-            class="button modal-button modal-button_close">
-            <span class="button__text">Ok</span>
-          </button>
-        </dialog>
       </div>
+
+      <dialog id="modal-window" class="modal-window">
+        <div class="modal-window__content flex-center">
+          <svg
+            class="modal-button__icon"
+            width="39"
+            height="39"
+            viewBox="0 0 39 39"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <use href="./svg/floppy.svg#floppy"></use>
+          </svg>
+
+          <p class="modal-window__text button__text">
+            Вставьте дискету, чтобы продолжить
+          </p>
+        </div>
+
+        <button
+          type="button"
+          onclick="window['modal-window'].close()"
+          class="button modal-button modal-button_close">
+          <span class="button__text">Ok</span>
+        </button>
+      </dialog>
     </footer>
 
     <script src="./scripts/like.js"></script>
