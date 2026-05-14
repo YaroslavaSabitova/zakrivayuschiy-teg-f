@@ -42,6 +42,7 @@
   gap: 20px;
   color: var(--main-color, #000);
   font-family: var(--font-accent, 'Impact', 'Geneva', sans-serif);
+  font-weight: var(--font-weight-accent, 400);
   text-transform: uppercase;
 }
 
@@ -93,8 +94,8 @@
   opacity: 0.5;
   color: var(--main-color, #000);
   font-family: var(--font-accent, 'Impact', 'Geneva', sans-serif);
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: var(--font-weight-accent, 400);
+  font-size: var(--font-size-additional, 14px);
   text-transform: uppercase;
   text-shadow: -1px 0 var(--light-color, #fff),
     0 1px var(--light-color, #fff), 1px 0 var(--light-color, #fff),
@@ -158,10 +159,15 @@
   padding-block: 17px;
 }
 
+.button {
+  padding-inline: 15px;
+  padding-block: 7px;
+}
+
 .button__text {
   color: var(--main-color, #000);
   font-family: var(--font-accent, 'Impact', 'Geneva', sans-serif);
-  font-weight: 400;
+  font-weight: var(--font-weight-accent, 400);
   font-size: var(--font-size-additional, 14px);
   line-height: 90%;
 }
@@ -170,9 +176,46 @@
   flex-shrink: 0;
 }
 
+.modal-button__icon {
+  width: 39px;
+  height: 39px;
+}
+
 .modal-button_open .modal-button__icon {
   width: 21px;
   height: 21px;
+}
+
+.modal-window {
+  flex-direction: column;
+  gap: 30px;
+  padding-inline: 30px;
+  padding-block: 30px;
+  inline-size: var(--modal-window-width);
+  min-inline-size: 341px;
+}
+
+.modal-window::backdrop {
+  opacity: 0.75;
+  background: var(--main-color, #000);
+}
+
+.modal-window__content {
+  gap: 20px;
+  margin-block-end: 30px;
+}
+
+.modal-window__text {
+  color: var(--main-color, #000);
+  font-family: var(--font-accent, 'Impact', 'Geneva', sans-serif);
+  font-weight: var(--font-weight-accent, 400);
+  font-size: var(--font-size-additional, 14px);
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+.modal-button_close {
+  width: 100%;
 }
 
 @media (width <= 376px) {
@@ -183,5 +226,9 @@
   .modal-button_open .modal-button__icon {
     width: 28px;
     height: 28px;
+  }
+
+  .modal-window {
+    padding-inline: 40px;
   }
 }

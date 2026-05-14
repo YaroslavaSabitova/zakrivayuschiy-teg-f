@@ -6,6 +6,7 @@
 
   --font-weight-min: 410;
   --font-weight-max: 715;
+  --font-weight-accent: 400;
 
   --font-size-main: 18px;
   --font-size-additional: 14px;
@@ -34,6 +35,11 @@
     23.4375rem,
     16.2852rem + 30.5164vw,
     43.75rem
+  );
+  --modal-window-width: clamp(
+    21.3125rem,
+    21.0484rem + 1.1268vw,
+    22.0625rem
   );
 
   --padding-block: clamp(7.5rem, 6.9231rem + 2.4615vw, 8rem);
