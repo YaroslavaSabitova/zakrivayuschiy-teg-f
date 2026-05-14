@@ -17,6 +17,7 @@
     'Optima',
     sans-serif
   );
+  background-color: var(--light-color, #fff);
   background-image: var(--gradient-main);
   background-size: cover;
   background-attachment: fixed;
@@ -41,7 +42,7 @@
   flex-direction: column;
   gap: 20px;
   color: var(--main-color, #000);
-  font-family: var(--font-accent, 'Impact', 'Geneva', sans-serif);
+  font-family: var(--font-accent, 'Copperplate', 'Papyrus', fantasy);
   font-weight: var(--font-weight-accent, 400);
   text-transform: uppercase;
 }
@@ -76,12 +77,14 @@
     'Optima',
     sans-serif
   );
-  font-size: var(--font-main, 18px);
+  font-size: var(--font-size-main, 18px);
   font-variation-settings: 'wght' var(--font-weight-max);
 }
 
 .card__promo {
   position: relative;
+  border-top: 2px solid var(--main-color);
+  border-bottom: 2px solid var(--main-color);
 }
 
 .card__image {
@@ -97,7 +100,7 @@
   right: 25px;
   opacity: 0.5;
   color: var(--main-color, #000);
-  font-family: var(--font-accent, 'Impact', 'Geneva', sans-serif);
+  font-family: var(--font-accent, 'Copperplate', 'Papyrus', fantasy);
   font-weight: var(--font-weight-accent, 400);
   font-size: var(--font-size-additional, 14px);
   text-transform: uppercase;
@@ -142,12 +145,6 @@
   gap: 12px;
   padding-inline: 25px;
   padding-block-end: 25px;
-}
-
-.footer {
-  margin-block-start: 50px;
-  margin-block-end: 100px;
-  border: none;
 }
 
 .button {
@@ -201,16 +198,19 @@
   position: relative;
   z-index: 2;
   color: var(--light-color, #ffffff);
-  font-family: var(--font-accent, 'Impact', 'Geneva', sans-serif);
+  font-family: var(--font-accent, 'Copperplate', 'Papyrus', fantasy);
   font-weight: var(--font-weight-accent, 400);
   font-size: var(--font-size-additional, 14px);
   line-height: 90%;
   mix-blend-mode: difference;
 }
 
+.main__wrapper {
+  margin: 50px auto 100px;
+  border: none;
+}
+
 .modal-button_open {
-  display: flex;
-  align-items: center;
   gap: 8px;
   padding-inline: 20px;
   padding-block: 17px;

@@ -1,31 +1,31 @@
-.card__image-filer_expectations {
+.card__image-filter_expectations {
   filter: brightness(0.9) contrast(1.5);
 }
 
-.card__image-filer_start {
+.card__image-filter_start {
   filter: saturate(3.5) hue-rotate(7deg);
 }
 
-.card__image-filer_success {
+.card__image-filter_success {
   filter: brightness(1.1) invert(5%);
 }
 
-.card__image-filer_junior {
+.card__image-filter_junior {
   filter: hue-rotate(45deg);
 }
 
-.card__image-filer_team {
+.card__image-filter_team {
   filter: hue-rotate(45deg) brightness(1.5);
 }
 
-.card__image-filer_variations {
+.card__image-filter_variations {
   filter: invert(1.5) grayscale(0.1);
 }
 
-.card__image-filer_relax {
+.card__image-filter_relax {
   filter: brightness(1.2) contrast(1.1) blur(1px);
 }
 
-.card__image-filer_repeat {
+.card__image-filter_repeat {
   filter: brightness(0.9) hue-rotate(20deg) contrast(1.5);
 }
