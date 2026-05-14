@@ -33,7 +33,6 @@
 
 .header {
   margin-block: var(--margin-block);
-  padding-inline: var(--padding-inline);
   padding-block: var(--padding-block);
   background-color: var(--light-color, #fff);
 }
@@ -143,6 +142,7 @@
 .footer {
   margin-block-start: 50px;
   margin-block-end: 100px;
+  border: none;
 }
 
 .modal-button {
