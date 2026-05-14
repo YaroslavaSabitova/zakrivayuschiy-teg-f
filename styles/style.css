@@ -226,6 +226,7 @@
 .modal-button_open .modal-button__icon {
   width: 21px;
   height: 21px;
+  fill: var(--light-color, #ffffff);
   mix-blend-mode: difference;
 }
 
